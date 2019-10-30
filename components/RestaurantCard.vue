@@ -43,55 +43,13 @@
 
 <script>
 export default {
-<<<<<<< HEAD
-  data() {
-    return {
-      name: 'Restaurante Italiano',
-      category: "Italian",
-      description: "the best italian restaurant in Barcelona.",
-      likes: 0,
-      items: ['Peras', 'Manzanas', 'Platanos'],
-      restaurants: [
-        {
-          name: "Manairo",
-          slug: "manairo"
-        },
-        {
-          name: "Gorría Restaurant",
-          slug: "gorria-restaurant"
-        },
-        {
-          name: "Dans le Noir?",
-          slug: "dans-noir"
-        }
-      ]
-    }
-  },
-  methods: {
-    sumLikes() {
-      this.likes = this.likes + 1
-    },
-    goToRestaurant(slug) {
-      this.$router.push(slug)
-    }
-  }
-}
-</script>
-
-<style>
-=======
 }
 </script>
 
 <style lang="scss" scoped>
->>>>>>> restaurantcomponent
 .restaurant-name {
   font-family: 'Pacifico';
   font-size: 30px;
   color: #8ae6ff;
 }
-<<<<<<< HEAD
 </style>
-=======
-</style>
->>>>>>> restaurantcomponent
