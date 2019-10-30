@@ -5,8 +5,8 @@
       <h1 class="title">
         FoodAdvisor
       </h1>
-      <h2 class="subtitle">
-      </h2>
+      <span class="tag is-success">Bulma css</span>
+      <font-awesome-icon :icon="['fab', 'apple']" style="font-size: 60"/>
     </div>
   </div>
 </template>
