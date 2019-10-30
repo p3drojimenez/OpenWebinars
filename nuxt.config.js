@@ -22,7 +22,7 @@ export default {
   /*
   ** Global CSS
   */
-  css: [ '~/assets/css/main.scss'],
+  css: ['~/assets/css/main.scss'],
   /*
   ** Plugins to load before mounting the App
   */
@@ -48,6 +48,10 @@ export default {
       }
     ]
   ],
+   // Añadimos la siguiente linea
+   styleResources: {
+    scss: ['~/assets/css/variables.scss']
+  },
   /*
   ** Build configuration
   */

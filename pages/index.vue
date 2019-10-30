@@ -1,22 +1,30 @@
 <template>
-  <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        FoodAdvisor
-      </h1>
-      <span class="tag is-success">Bulma css</span>
-      <font-awesome-icon :icon="['fab', 'apple']" style="font-size: 60" />
+  <section class="section">
+    <div class="container">
+      <div class="column">
+        <RestaurantCard />
+        {{ message }}
+      </div>
+      <div class="column">
+        <nuxt-link to="/admin" class="button is-info">
+          Admin
+        </nuxt-link>
+      </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import RestaurantCard from "~/components/RestaurantCard.vue"
 
 export default {
   components: {
-    Logo
+    RestaurantCard
+  },
+  data() {
+    return {
+      message: "hola mundo!"
+    }
   }
 }
 </script>
