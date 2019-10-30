@@ -1,11 +1,11 @@
 <template>
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand logo">
-      <img src="~/assets/images/logoFoodAdvisor.png" alt="FoodAdvisor logo" />
+      <img src="~/assets/images/logo.png" alt="FoodAdvisor logo" />
     </div>
     <div class="navbar-end">
       <div class="navbar-item">
-        <nuxt-link to="login" class="button is-primary">
+        <nuxt-link to="login" class="button custom-button">
           Login
         </nuxt-link>
       </div>
@@ -13,7 +13,11 @@
   </nav>
 </template>
 
-<style lang="scss" scope>
+<script>
+export default {}
+</script>
+
+<style lang="scss" scoped>
 @import '~/assets/css/variables.scss';
 .logo {
   width: 100px;

@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
   <div class="box column is-4 is-offset-4 box-login">
     <div class="columns">
       <div class="column has-text-centered">
@@ -92,6 +93,10 @@
         </button>
       </div>
     </div>
+=======
+  <div>
+    <a v-bind:href="url">Google</a>
+>>>>>>> restaurantcomponent
   </div>
 </template>
 
@@ -99,10 +104,14 @@
 export default {
   data() {
     return {
+<<<<<<< HEAD
       units: 0,
       price: 10,
       iva: 10,
       errorMessage: null
+=======
+      url: 'https://google.es'
+>>>>>>> restaurantcomponent
     }
   }
 }

@@ -9,30 +9,33 @@
       <div class="media">
         <div class="media-content">
           <p class="title is-4 restaurant-name">
-            {{ name }}
+            La real Burger
           </p>
           <p class="subtitle is-6">
-            <span class="is-category tag">{{ category }}</span>
-            <span class="tag is-info" v-if="likes != 0">{{ likes }}</span>
-            <span class="tag is-warning" v-else>NO TIENE LIKES</span>
+            <span class="is-category tag">
+              Burgers
+            </span>
           </p>
         </div>
       </div>
       <div class="content">
-        {{ description }}
+        <p>
+          The best italian restaurant in Barcelona
+        </p>
       </div>
-      <div>
-        <!-- <ul>
-          <li v-for="(item, index) in items" :key="index"> {{ item }}</li>
-        </ul> -->
-        <ul>
-          <li v-for="(restaurant, index) in restaurants" :key="index">
-            <button @click="goToRestaurant(restaurant.slug)">
-              {{ restaurant.name }}
-            </button>
-          </li>
-        </ul>
-        <button class="button" @click="sumLikes">sumar like</button>
+      <div class="columns">
+        <div class="column">
+          <button class="button" @click="onLikeButton">
+            <span class="icon is-small">
+              <font-awesome-icon :icon="['fa', 'heart']" style="color: #red;" />
+            </span>
+          </button>
+        </div>
+        <div class="column">
+          <button class="button is-info" v-on:click="onDetailBoton">
+            More Info
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -40,6 +43,7 @@
 
 <script>
 export default {
+<<<<<<< HEAD
   data() {
     return {
       name: 'Restaurante Italiano',
@@ -75,9 +79,19 @@ export default {
 </script>
 
 <style>
+=======
+}
+</script>
+
+<style lang="scss" scoped>
+>>>>>>> restaurantcomponent
 .restaurant-name {
   font-family: 'Pacifico';
   font-size: 30px;
   color: #8ae6ff;
 }
+<<<<<<< HEAD
 </style>
+=======
+</style>
+>>>>>>> restaurantcomponent

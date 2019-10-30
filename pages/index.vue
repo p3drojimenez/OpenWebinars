@@ -1,5 +1,6 @@
 <template>
   <section class="section">
+<<<<<<< HEAD
     <div class="container">
       <div class="column">
         <RestaurantCard />
@@ -11,53 +12,62 @@
         </nuxt-link>
       </div>
     </div>
+=======
+    <div class="columns" style="flex-wrap: wrap">
+      <div
+        class="column"
+        style="margin: 20"
+        v-for="(restaurant, index) in restaurants"
+        :key="index"
+      >
+        <RestaurantCard />
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column">
+        <nuxt-link to="/admin" class="button is-info">
+          Admin
+        </nuxt-link>
+      </div>
+    </div>
+>>>>>>> restaurantcomponent
   </section>
 </template>
 
 <script>
+<<<<<<< HEAD
 import RestaurantCard from "~/components/RestaurantCard.vue"
 
+=======
+import RestaurantCard from '~/components/RestaurantCard'
+>>>>>>> restaurantcomponent
 export default {
   components: {
     RestaurantCard
   },
   data() {
     return {
+<<<<<<< HEAD
       message: "hola mundo!"
+=======
+      restaurants: [
+        {
+          name: 'Manairo',
+          slug: 'manairo'
+        },
+        {
+          name: 'Gorría Restaurant',
+          slug: 'gorria-restaurant'
+        },
+        {
+          name: 'Dans le Noir?',
+          slug: 'dans-noir'
+        }
+      ]
+>>>>>>> restaurantcomponent
     }
   }
 }
 </script>
 
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
-</style>
+<style></style>

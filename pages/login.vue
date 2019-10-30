@@ -1,8 +1,15 @@
 <template>
+<<<<<<< HEAD
   <div class="box column is-4 box-login">
     <div class="columns">
       <div class="column">
         <img src="~/assets/images/logoFoodAdvisor.png" />
+=======
+  <div class="box column is-4 is-offset-4 box-login">
+    <div class="columns">
+      <div class="column">
+        <img src="~/assets/images/logo.png" />
+>>>>>>> restaurantcomponent
       </div>
     </div>
     <div class="columns">
@@ -34,4 +41,8 @@ export default {
 .box-login {
   margin-top: 30px;
 }
+<<<<<<< HEAD
 </style>
+=======
+</style>
+>>>>>>> restaurantcomponent
