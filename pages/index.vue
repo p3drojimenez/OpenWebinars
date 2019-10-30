@@ -6,7 +6,7 @@
         FoodAdvisor
       </h1>
       <span class="tag is-success">Bulma css</span>
-      <font-awesome-icon :icon="['fab', 'apple']" style="font-size: 60"/>
+      <font-awesome-icon :icon="['fab', 'apple']" style="font-size: 60" />
     </div>
   </div>
 </template>
